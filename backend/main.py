@@ -55,7 +55,7 @@ def chat(data: ChatRequest):
                     "parts": [{"text": message}]
                 }]
             },
-            timeout=60
+            timeout=120
         )
 
         if not response.ok:
